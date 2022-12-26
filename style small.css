@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+#navbar {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.navtitle {
+    color: white;
+    font-family: sans-serif;
+}
+
+#logo {
+    height: 70px;
+}
+
+#ttl1 {
+    margin-left: 10px;
+}
+
+#ttl2 {
+    width: 225px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 30px;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+#navbtncontainer {
+    display: none;
+}
+
+#insta {
+    height: 30px;
+    margin-top: 19px;
+    margin-right: 15px;
+    margin-left: auto;
+}
+
+#smallbtncontainer {
+    margin-top: 40px;
+    width: 100%;
+    height: 225px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+.smallbtn {
+    margin-bottom: 20px;
+    width: 80%;
+    height: 55px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 3px 6px black;
+    text-align: center;
+    line-height: 55px;
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: bold;
+    transition: box-shadow 0.3s;
+}
+
+.smallbtn:hover{
+    box-shadow: 0px 3px 12px black;
+}
+
+#mhsphoto {
+    width: 100%;
+    height: 80vh;
+    object-fit: cover;
+    position: absolute;
+    z-index: 10;
+    background-image: linear-gradient(to top, white, rgba(0, 0, 0, 0.139), 30%, rgba(0, 0, 0, 0.139)), url("melbourne high.jpeg");
+    background-position: center;
+}
+
+#peaks {
+    position: absolute;
+    width: 100%;
+    z-index: 20;
+}
+
+#ourvision {
+    width: 100%;
+    height: fit-content;
+    font-family: sans-serif;
+    color: white;
+}
+
+#statement {
+    position: absolute;
+    top: 410px;
+    width: 100%;
+    text-align: center;
+    z-index: 30;
+}
+
+#statementtitle {
+    font-size: 50px;
+    font-weight: 800;
+}

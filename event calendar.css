@@ -1,0 +1,192 @@
+body {
+    align-items: center;
+}
+.container {
+    margin-top: calc(((100vh + 70px) - 32rem)/2);
+    width: 48rem;
+    color: white;
+    display: flex;
+    margin-left: calc((100% - 48rem)/2);
+    overflow: hidden;
+}
+
+.container > * {
+    font-family: "Quicksand", sans-serif;
+}
+
+.calendar {
+    width: 28rem;
+    height: 32rem;
+    background-color: #222227;
+    z-index: 30;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+.timetable, .upcomingevents {
+    width: 20rem;
+    height: 32rem;
+    background-color: #37373f;
+    z-index: 10;
+    position: absolute;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.timetable {
+    transition: all 0.7s;
+    position: relative;
+    text-align: center;
+}
+
+.upcomingevents {
+    background-color: #199264;
+    z-index: 0;
+}
+
+.upcomingeventstransparent {
+    background-color: transparent;
+    z-index: 0;
+    width: 20rem;
+    height: 32rem;
+    position: relative;
+    transition: all 0.7s;
+}
+
+.sliderbtn {
+    margin-top: calc((32rem - 9rem)/2);
+    height: 9rem;
+    width: 2rem;
+    z-index: 10;
+    position: absolute;
+}
+
+.forward {
+    background-color: transparent;
+    border-bottom: 2rem solid transparent;
+	border-left: 2rem solid #555;
+	border-right: transparent;
+    border-top: 2rem solid transparent;
+}
+
+.backward {
+    background-color: transparent;
+    border-bottom: 2rem solid transparent;
+	border-left: transparent;
+	border-right: 2rem solid #555;
+    border-top: 2rem solid transparent;
+}
+
+.text {
+    z-index: 20;
+    position: relative;
+    line-height: 9rem;
+    text-align: center;
+    color: white;
+    transform: scaleY(3);
+    font-size: rem;
+    font-weight: lighter;
+    cursor: grab;
+}
+
+.text:active {
+    cursor: grabbing;
+}
+
+.back {
+    right: 0;
+    float: right;
+}
+.month {
+    width: 100%;
+    height: 6rem;
+    background-color: #167e56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    text-shadow: 0 .3rem .2rem rgba(0, 0, 0, .2);
+    border-top-left-radius: 2rem;
+}
+
+.arrow {
+    font-size: 40px;
+    text-shadow: none;
+    cursor: pointer;
+    transform: scaleY(1.9);
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin: 0;
+    padding-top: 3px;
+    margin-bottom: 2px;
+}
+
+.month p {
+    font-size: .9rem;
+    margin: 0;
+}
+
+.weekdays {
+    width: 100%;
+    height: 3.5rem;
+    padding: 0 .4rem;
+    display: flex;
+    align-items: center;
+}
+
+.weekdays div{
+    font-size: 1.2rem;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    width: calc(27.2rem/7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: .1rem;
+}
+
+.days div {
+    font-size: 1.2rem;
+    margin: 0.2rem;
+    width: calc(25rem/7);
+    height: 3.3rem;
+    text-align: center;
+    line-height: 3.3rem;
+    text-shadow: 0 .3rem .5rem rgba(0, 0, 0, .5);
+    transition: background-color .1s;
+}
+
+.days div:hover:not(.select, .prev-date, .next-date){
+    background-color: rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
+
+.prev-date, .next-date {
+    opacity: .5;
+}
+
+.select {
+    background-color: #167e56;
+}
+
+.pages {
+    display: flex;
+    width: 40rem;
+    box-sizing: border-box;
+}
+
+.datestring {
+    margin-top: 2rem;
+    font-size: 2rem;
+    margin-left: 1.2rem; 
+}

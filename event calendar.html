@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+        <link id="pagestyle" href="nav large.css" rel="stylesheet">
+        <link id="pagestyle" href="event calendar.css" rel="stylesheet">
+        <script src="scriptnav.js"></script>
+        <link rel="shortcut icon" type="image/x-icon" href="src logo circle.png" />
+        <title>EVENT CALENDAR</title>
+    </head>
+    <body>
+        <section id="navbar">
+            <a href="index.html" class="navtitle" id="ttl1">
+                <img src="src logo.png" id="logo">
+            </a>
+            <a href="index.html" class="navtitle" id="ttl2">MHS SRC 25</a>
+            <a href="https://www.instagram.com/mhs.src25/" target="_blank">
+                <img src="insta.png" id="insta">
+            </a>
+            <div id="navbtncontainer">
+                <a href="event calendar.html"class="navbtn" id="btn1">EVENT CALENDAR</a>
+                <a class="navbtn" id="btn2">EVENTS & INITIATIVES</a>
+                <a class="navbtn" id="btn3">YOUR EXECUTIVES</a>
+            </div>
+        </section>
+        <div class="container">
+            <div class="calendar">
+              <div class="month">
+                <div class="arrow prev" style="margin-left: 30px;">&lt;</div>
+                <div class="date">
+                  <h1></h1>
+                  <p></p>
+                </div>
+                <div class="arrow next" style="margin-right: 30px;">&gt;</div>
+              </div>
+              <div class="weekdays">
+                <div>Sun</div>
+                <div>Mon</div>
+                <div>Tue</div>
+                <div>Wed</div>
+                <div>Thu</div>
+                <div>Fri</div>
+                <div>Sat</div>
+              </div>
+              <div class="days">
+              </div>
+            </div>
+            <div class="pages">
+                <div class="timetable page">
+                    <button class="backward sliderbtn back"></button>
+                    <div class="sliderbtn text back" onclick="slide('next')">&lt;</div>
+                    <h2 class="datestring"></h2>
+                </div>
+                <div class="upcomingevents">
+                </div>
+                <div class="upcomingeventstransparent page">
+                    <button class="forward sliderbtn"></button>
+                    <div class="sliderbtn text" onclick="slide('prev')">&gt;</div>
+                </div>
+            </div>
+        </div>
+        <script src="event calendar.js"></script>
+    </body>
+</html>

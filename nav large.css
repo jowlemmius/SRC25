@@ -1,0 +1,67 @@
+body {
+    margin: 0;
+    width: 100%;
+}
+
+#navbar {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+}
+
+.navtitle {
+    color: white;
+    font-family: sans-serif;
+}
+
+#logo {
+    height: 70px;
+}
+
+#ttl1 {
+    margin-left: 10px;
+}
+
+#ttl2 {
+    width: 225px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#navbtncontainer {
+    display: flex;
+    width: fit-content;
+    height: 70px;
+    margin-right: 10px;
+    margin-left: auto;
+    font-family: sans-serif;
+}
+
+.navbtn {
+    line-height: 70px;
+    font-weight: 570;
+    font-size: fit;
+    width: 215px;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navbtn:hover {
+    background-color: #333332;
+}
+
+#insta {
+    height: 30px;
+    margin-top: 19px;
+    margin-right: 10px;
+}

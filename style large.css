@@ -1,0 +1,103 @@
+body {
+    margin: 0;
+    width: 100%;
+    height: 2000px;
+}
+
+#navbar {
+    height: 70px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    position: fixed;
+    z-index: 100;
+}
+
+.navtitle {
+    color: white;
+    font-family: sans-serif;
+}
+
+#logo {
+    height: 70px;
+}
+
+#ttl1 {
+    margin-left: 10px;
+}
+
+#ttl2 {
+    width: 225px;
+    text-align: center;
+    line-height: 70px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    font-size: 30px;
+}
+
+#navbtncontainer {
+    display: flex;
+    width: fit-content;
+    height: 70px;
+    margin-right: 10px;
+    margin-left: auto;
+    font-family: sans-serif;
+}
+
+.navbtn {
+    line-height: 70px;
+    font-weight: 570;
+    font-size: fit;
+    width: 215px;
+    transition: background-color 0.3s;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+}
+
+.navbtn:hover {
+    background-color: #333332;
+}
+
+#insta {
+    height: 30px;
+    margin-top: 19px;
+    margin-right: 10px;
+}
+
+#smallbtncontainer {
+    display: none;
+}
+
+#mhsphoto {
+    padding-top: 70px;
+    width: 100%;
+    height: calc(100vh - 70px);
+    object-fit: cover;
+    background-image: linear-gradient(to top, white, rgba(0, 0, 0, 0.139), 30%, rgba(0, 0, 0, 0.139)), url("melbourne high.jpeg");
+    background-position: center;
+}
+
+#peaks {
+    display: none;
+}
+
+#ourvision {
+    width: 100%;
+    height: fit-content;
+    font-family: sans-serif;
+    color: white;
+}
+
+#statement {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+    z-index: 30;
+}
+
+#statementtitle {
+    font-size: 50px;
+    font-weight: 800;
+}
